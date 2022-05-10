@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product-List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="productlist.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <section class="banner">
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu-li"><a href="#">Anasayfa</a></li>
+          <li class="menu-li"><a href="#">Hakkımızda</a></li>
+          <li class="menu-li"><a href="#">Hizmetler</a></li>
+          <li class="menu-li"><a href="#">Haberler</a></li>
+          <li class="menu-li"><a href="#">Alışveriş</a></li>
+          <li class="hamburger-btn"><i class="fa-solid fa-bars"></i></li>
+        </ul>
+        <div class="banner-icons">
+          <div class="search">
+            <div class="icon"></div>
+            <div class="input">
+              <input type="text" id="mysearch" placeholder="Search">
+            </div>
+            <span class="clear" onclick="document.getElementById('mysearch').value=''"></span>
+          </div>
+          <div class="heart-click">
+            <button class="like_btn">
+              <span id="heart"> <i class="fa-regular fa-heart"></i></span>
+              <span id="count">0</span>
+            </button>
+          </div>
+          <div class="shopping-cart">
+            <button class="shoping-btn">
+              <span id="shoping"> <i class="fa-solid fa-cart-shopping"></i></span>
+              <span id="count_shp">0</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="part2">
+      <div class="part2-container">
+        <div class="select-tools">
+          <div class="styles">
+            <p>SELECT STYLE</p>
+            <a href="#">ANTİKA AVİZELER</a>
+            <a href="#">MODERN AVİZE</a>
+            <a href="#">ÖZEL TASATIM</a>
+          </div>
+          <div class="show-tools">
+            <button class="grid"><img src="images/grid.png" alt=""></button>
+            <button class="list"><img src="images/list.png" alt=""></button>
+            <p>Showing 1 to 10 of 243 products</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="boxes">
+            <div class="box">
+              <div class="heart-click2">
+                <button class="like_btn2">
+                  <span id="heart"> <i class="fa-regular fa-heart"></i></span>
+                </button>
+              </div>
+              <div class="image">
+                <img src="images/luster.png" alt="">
+              </div>
+              <div class="product-info">
+                <h2>ART DECO | ALTE KRONLEUCHTER</h2>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="heart-click2">
+                <button class="like_btn2">
+                  <span id="heart"> <i class="fa-regular fa-heart"></i></span>
+                </button>
+              </div>
+              <div class="image">
+                <img src="images/luster.png" alt="">
+              </div>
+              <div class="product-info">
+                <h2>ART DECO | ALTE KRONLEUCHTER</h2>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="heart-click2">
+                <button class="like_btn2">
+                  <span id="heart"> <i class="fa-regular fa-heart"></i></span>
+                </button>
+              </div>
+              <div class="image">
+                <img src="images/luster.png" alt="">
+              </div>
+              <div class="product-info">
+                <h2>ART DECO | ALTE KRONLEUCHTER</h2>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="heart-click2">
+                <button class="like_btn2">
+                  <span id="heart"> <i class="fa-regular fa-heart"></i></span>
+                </button>
+              </div>
+              <div class="image">
+                <img src="images/luster.png" alt="">
+              </div>
+              <div class="product-info">
+                <h2>ART DECO | ALTE KRONLEUCHTER</h2>
+              </div>
+            </div>
+
+
+            <div class="box">
+              <div class="heart-click2">
+                <button class="like_btn2">
+                  <span id="heart"> <i class="fa-regular fa-heart"></i></span>
+                </button>
+              </div>
+              <div class="image">
+                <img src="images/luster.png" alt="">
+              </div>
+              <div class="product-info">
+                <h2>ART DECO | ALTE KRONLEUCHTER</h2>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="heart-click2">
+                <button class="like_btn2">
+                  <span id="heart"> <i class="fa-regular fa-heart"></i></span>
+                </button>
+              </div>
+              <div class="image">
+                <img src="images/luster.png" alt="">
+              </div>
+              <div class="product-info">
+                <h2>ART DECO | ALTE KRONLEUCHTER</h2>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="heart-click2">
+                <button class="like_btn2">
+                  <span id="heart"> <i class="fa-regular fa-heart"></i></span>
+                </button>
+              </div>
+              <div class="image">
+                <img src="images/luster.png" alt="">
+              </div>
+              <div class="product-info">
+                <h2>ART DECO | ALTE KRONLEUCHTER</h2>
+              </div>
+            </div>
+
+
+            <div class="box">
+              <div class="heart-click2">
+                <button class="like_btn2">
+                  <span id="heart"> <i class="fa-regular fa-heart"></i></span>
+                </button>
+              </div>
+              <div class="image">
+                <img src="images/luster.png" alt="">
+              </div>
+              <div class="product-info">
+                <h2>ART DECO | ALTE KRONLEUCHTER</h2>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="heart-click2">
+                <button class="like_btn2">
+                  <span id="heart"> <i class="fa-regular fa-heart"></i></span>
+                </button>
+              </div>
+              <div class="image">
+                <img src="images/luster.png" alt="">
+              </div>
+              <div class="product-info">
+                <h2>ART DECO | ALTE KRONLEUCHTER</h2>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="heart-click2">
+                <button class="like_btn2">
+                  <span id="heart"> <i class="fa-regular fa-heart"></i></span>
+                </button>
+              </div>
+              <div class="image">
+                <img src="images/luster.png" alt="">
+              </div>
+              <div class="product-info">
+                <h2>ART DECO | ALTE KRONLEUCHTER</h2>
+              </div>
+            </div>
+
+
+            <div class="box">
+              <div class="heart-click2">
+                <button class="like_btn2">
+                  <span id="heart"> <i class="fa-regular fa-heart"></i></span>
+                </button>
+              </div>
+              <div class="image">
+                <img src="images/luster.png" alt="">
+              </div>
+              <div class="product-info">
+                <h2>ART DECO | ALTE KRONLEUCHTER</h2>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="heart-click2">
+                <button class="like_btn2">
+                  <span id="heart"> <i class="fa-regular fa-heart"></i></span>
+                </button>
+              </div>
+              <div class="image">
+                <img src="images/luster.png" alt="">
+              </div>
+              <div class="product-info">
+                <h2>ART DECO | ALTE KRONLEUCHTER</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brands">
+      <div class="brands-container">
+        <div class="brands-service">
+          <div class="brand-images">
+            <img src="/avize/about-us/images/germany-brand.png" alt="">
+            <h2>MADE İN GERMANY</h2>
+          </div>
+          <div class="brand-images">
+            <img src="/avize/about-us/images/guarantee-img.png" alt="">
+            <h2>KALİTE GARANTİSİ</h2>
+          </div>
+          <div class="brand-images">
+            <img src="/avize/about-us/images/design-img.png" alt="">
+            <h2>ÖZEL TASARIM SEÇENEĞİ</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about-container">
+        <div class="about-us">
+          <h4>Kron-Leuchter</h4>
+          <h2>Kaliteli Avizenin Adresi</h2>
+          <p>Für viele Liebhaber schneller Motoren oder leistungsstarker Nutzfahrzeuge ist es ein spannendes Hobby,
+            Auto- und Verkehrsmodelle im Miniformat wie 1:18, 1:43 oder 1:87 zu sammeln (z.B. von Red Bull Racing). Der
+            Klassiker dabei ist natürlich Matchbox, der Siku control, WIKING Modelle sowie Espewe Modelle. Schnelle
+            Flitzer wie bekannte Rennfahrzeuge von etablierten Automarken (wie z.B. Porsche Targa oder den Porsche 993
+            Turbo) gibt es dabei nicht nur von den jeweiligen Herstellern oder von auf Modellautos spezialisierten
+            Marken zu kaufen. Auch private Anbieter veräußern Stücke aus ihren Vitrinen, sodass auch Auto- oder
+            natürlich auch Lkw- oder Bus-Miniaturen mit hohem Sammlerwert zu entdecken sind. </p>
+          <p>Die Auto- und Verkehrsmodelle, z.B. der Corvette C3, sind auch ein interessantes Hobby für alle, die sich
+            mit der Historie weltbekannter Autoproduzenten wie Mercedes (siehe z.B. Mercedes G AMG Modelle) und Porsche,
+            BMW und Ford auseinandersetzen. Nicht selten finden sich unter den Angeboten langjähriger Sammler auch Sets
+            aus mehreren Modellen, die ein Automobilhersteller im Lauf der Zeit auf den Markt gebracht hat. Neben
+            zahlreichen Variationen im Hinblick auf das Herstellungsjahr und das Modelljahr gibt es auch beim Material
+            verschiedene Ausführungen, zum Beispiel aus Kunststoff oder Gusseisen.</p>
+          <p>Nutzfahrzeuge im kleinen Format</p>
+          <p>Auch Fahrzeugmodelle, die für die Beförderung von Personen oder Gütern sowie bestimmte Arbeiten eingesetzt
+            werden, sind bei den Liebhabern von Miniaturmodellen sehr gefragt. Ein großer Schwerpunkt liegt hierbei auf
+            der breitgefächerten Palette der Landwirtschaftsfahrzeuge. Vor allem die unverwechselbaren Traktoren mit
+            ihrer imposanten Bereifung sind Schmuckstücke in der Sammlervitrine. Bei den Industriefahrzeugen sind es vor
+            allem die Baukipper, die mit einer durchdachten Funktionalität und einer imposanten Optik punkten. Suchen
+            Sie auch nach einem Goliath Dreirad von Wiking sowie bezüglich des Themas Reifen und Felgen nach AC
+            Schnitzer Rädern.</p>
+          <p>Auto-, Lkw- und Busmodelle gehören ebenfalls zu den besonders gefragten Modellen im Miniaturbereich. Sie
+            faszinieren mit einem oftmals wuchtigen Erscheinungsbild, das die Kraft dieser Fahrzeuge schon optisch
+            erahnen lässt. Zudem kommen liebenswerte Charakteristika im Hinblick auf die Form oder spezielle Schriftzüge
+            hinzu, die den Experten auf Anhieb das Baujahr dieser Modelle verraten. Stöbern Sie bei eBay im
+            Miniaturfuhrpark der einzelnen Anbieter und suchen Sie sich ein paar neue Modelle für Ihre Sammlung an
+            persönlichen Favoriten aus.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="all-bg">
+      <section class="contact-logo">
+        <div class="contact-logo-container">
+          <div class="logos">
+            <img src="/avize/about-us/images/logos-img.png" alt="">
+          </div>
+          <div class="location">
+            <img src="/avize/index-image/mapimg.webp" alt="">
+          </div>
+      </section>
+      <section class="contact-about">
+        <div class="contact-about-container">
+          <div class="footer-menu">
+            <div class="yaska-logo">
+              <img src="images/yaska-img.png" alt="">
+            </div>
+            <ul>
+              <li>GIRSHINER STR.9510969 BERLIN</li>
+              <li class="woch">Mo-Sa 13:00 - 18:00</li>
+              <li>+49 173 2372 411</li>
+              <li>INFO@LIGHT-DELUX.COM</li>
+            </ul>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+
+          <div class="footer-menu">
+            <h2>INFO</h2>
+            <ul class="inline">
+              <li><a href="#">HAKKIMIZDA</a></li>
+              <li><a href="#">AVİZELER</a></li>
+              <li><a href="#">ALIŞVERİŞ</a></li>
+              <li><a href="#">HIZMETLER</a></li>
+              <li><a href="#">HABELER</a></li>
+              <li><a href="#">IMPRESSUM</a></li>
+              <li><a href="#">BEWERTUNGEN</a></li>
+            </ul>
+          </div>
+          <div class="footer-menu">
+            <h2>AVIZELER</h2>
+            <ul>
+              <li><a href="#">ATIKA AVIZELER</a></li>
+              <li><a href="#">YENI MODEL AVİZELER</a></li>
+              <li><a href="#">ÖZEL TASARIM AVIZELER</a></li>
+              <li><a href="#">SPECIAL SERI AVIZELER</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <p class="copyright">@2021-<span>KRONLEUCHTER</span>.ALL RİGHTS RESERVED</p>
+    </footer>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+  <script src="productlist.js"></script>
+</body>
+
+</html>

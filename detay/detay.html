@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detay</title>
+    <link rel="stylesheet" href="detay.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <section class="banner">
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu-li"><a href="#">Anasayfa</a></li>
+            <li class="menu-li"><a href="#">Hakkımızda</a></li>
+            <li class="menu-li"><a href="#">Alışveriş</a></li>
+            <li class="menu-li"><a href="#">Hizmetler</a></li>
+            <li class="menu-li"><a href="#">Haberler</a></li>
+            <li class="hamburger-btn"><i class="fa-solid fa-bars"></i></li>
+          </ul>
+          <div class="banner-icons">
+            <div class="search">
+              <div class="icon"></div>
+              <div class="input">
+                <input type="text" id="mysearch" placeholder="Search" />
+              </div>
+              <span
+                class="clear"
+                onclick="document.getElementById('mysearch').value=''"
+              ></span>
+            </div>
+            <div class="heart-click">
+              <button class="like_btn">
+                <span id="heart"> <i class="fa-regular fa-heart"></i></span>
+                <span id="count">0</span>
+              </button>
+            </div>
+            <div class="shopping-cart">
+              <button class="shoping-btn">
+                <span id="shoping">
+                  <i class="fa-solid fa-cart-shopping"></i
+                ></span>
+                <span id="count_shp">0</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <div class="product-details">
+        <div class="details-container">
+          <div class="images"></div>
+          <div class="select-products">
+            <div class="back-to">
+              <a href="#">
+                <span><i class="fa-solid fa-arrow-left-long"></i></span>
+                AVİZELERE GERİ DÖN</a
+              >
+            </div>
+            <h4>ANTİKA SERİSİ</h4>
+            <h2>ANTİKA AVİZE V1801</h2>
+            <p>SELECT SİZE</p>
+            <div class="size">
+              <a href="#" id="eightcm">80CM DURCHMESSER</a>
+              <a href="#" id="ninecm">90CM DURCHMESSER</a>
+            </div>
+            <p>SELECT STYLE</p>
+            <div class="style">
+              <a href=" #" class="basic">BASİC</a>
+              <a href="#" class="premium">PREMİUM</a>
+              <a href="#" class="special">SPECİAL</a>
+              <a href="#" class="gold">GOLD</a>
+            </div>
+            <div class="buy">
+              <div class="price">
+                <i class="fa-solid fa-circle-plus"></i>
+                <span>890,99€</span>
+              </div>
+              <div class="add-card">
+                <a href="#">ADD TO CARD</a>
+                <button class="heart2">
+                  <span class="like2"><i class="fa-regular fa-heart"></i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="table-section">
+              <div class="table-title">
+                <div>
+                  <a href="#" class="tecnic">TEKNİK ÖZELLİKLER</a>
+                </div>
+                <div>
+                  <a href="#" class="detay">ÜRÜN DETAYLARI</a>
+                </div>
+                <div>
+                  <a href="#">BENZER ÜRÜNLER</a>
+                </div>
+              </div>
+              <div class="table">
+                <table cellspacing="0" cellpaddinf="0">
+                  <tr>
+                    <td>DURCHMESSER</td>
+                    <td>70cm (auch in 80cm, 100cm und 130cm)</td>
+                  </tr>
+                  <tr>
+                    <td>Höhe ohne Kette</td>
+                    <td>110CM</td>
+                  </tr>
+                  <tr>
+                    <td>GESAMTHÖHE</td>
+                    <td>110CM BİS 200CM (VARİABEL)</td>
+                  </tr>
+                  <tr>
+                    <td>GEWİCHT</td>
+                    <td>12KG</td>
+                  </tr>
+                  <tr>
+                    <td>LİCHTQUELLER</td>
+                    <td>21XE14</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="part2">
+        <div class="banner-info">
+          <div class="banner-content">
+            <div class="banner-img">
+              <img src="images/video-img.jpg" alt="" />
+            </div>
+            <div class="banner-suggest">
+              <article>
+                <h3>TANITIM VIDEOSU</h3>
+                <h2><span>Özenle</span> Avizelerinizi Hazırlıyoruz.</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                  maecenas accumsan lacus vel facilisis.
+                </p>
+                <p>
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum suspendisse ultrices gravida.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="kargo">
+        <div class="kargo-container">
+          <div class="kargo-content">
+            <article>
+              <h3>İHTİŞAMLI GÖRÜNÜM</h3>
+              <h2><span>kargolama</span> Özel Paketleme</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </article>
+          </div>
+          <div class="kargo-img">
+            <img src="images/kargo-img.jpg" alt="" />
+            <img src="images/kargosss.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="part3">
+        <div class="part3-container">
+          <div class="messaging">
+            <div class="messaging-img">
+              <img src="images/customerimg.webp" alt="" />
+            </div>
+            <div class="messaging-content">
+              <article>
+                <h3>MÜŞTERİ YORUMLARI</h3>
+                <h2>
+                  <span>Emma Müller</span> “Kalite her zaman önceliğimizdir.”
+                </h2>
+                <p>
+                  We have a very large selection of chandeliers and trading
+                  exclusively with chandeliers. Mainly we are dealing with
+                  antique chandeliers, but the demand for Chandeliers are all
+                  original antique and vintage
+                </p>
+                <h2>Mürset Restaurants</h2>
+                <p>ehren im Aarauer Schachen</p>
+                <a href="#">HAKKIMIZDA</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="question">
+        <div class="question-container">
+          <span>&#8212;</span>
+          <span>sıkca</span>
+          <span>&#8212;</span>
+          <h3>SORULAN SORULAR</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+          <div class="accordion">
+            <div class="accordion-part">
+              <div class="contentBx">
+                <div class="label">Met onze in-house kennis en kunde op</div>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label">Met onze in-house kennis en kunde op</div>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label">Met onze in-house kennis en kunde op</div>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-part">
+              <div class="contentBx">
+                <div class="label">Met onze in-house kennis en kunde op</div>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label">Met onze in-house kennis en kunde op</div>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label">Met onze in-house kennis en kunde op</div>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts-brand">
+        <div class="contact-container">
+          <div class="brands">
+            <img src="images/logos-img.png" alt="" />
+          </div>
+          <div class="contact-info">
+            <h2>Tappen sie im dunkelnt? +49 173 2372 411</h2>
+            <div class="contacts">
+              <div class="contact">
+                <img src="images/global.png" alt="" />
+                <p>Mo-Sa 13:00 - 18:00</p>
+              </div>
+              <div class="contact">
+                <img src="images/message.png" alt="" />
+                <p>NFO@LIGHT-DELUX.COM</p>
+              </div>
+              <div class="contact">
+                <img src="images/smarts.png" alt="" />
+                <p>KONTACT FORMULAR</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-about">
+        <div class="contact-about-container">
+          <div class="footer-menu">
+            <div class="yaska-logo">
+              <img src="images/yaska-img.png" alt="" />
+            </div>
+            <ul>
+              <li>GIRSHINER STR.9510969 BERLIN</li>
+              <li class="woch">Mo-Sa 13:00 - 18:00</li>
+              <li>+49 173 2372 411</li>
+              <li>INFO@LIGHT-DELUX.COM</li>
+            </ul>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+
+          <div class="footer-menu">
+            <h2>INFO</h2>
+            <ul class="inline">
+              <li><a href="#">HAKKIMIZDA</a></li>
+              <li><a href="#">AVİZELER</a></li>
+              <li><a href="#">ALIŞVERİŞ</a></li>
+              <li><a href="#">HIZMETLER</a></li>
+              <li><a href="#">HABELER</a></li>
+              <li><a href="#">IMPRESSUM</a></li>
+              <li><a href="#">BEWERTUNGEN</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-menu">
+            <h2>AVIZELER</h2>
+            <ul>
+              <li><a href="#">ATIKA AVIZELER</a></li>
+              <li><a href="#">YENI MODEL AVİZELER</a></li>
+              <li><a href="#">ÖZEL TASARIM AVIZELER</a></li>
+              <li><a href="#">SPECIAL SERI AVIZELER</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p class="copyright">
+          @2021-<span>KRONLEUCHTER</span>.ALL RİGHTS RESERVED
+        </p>
+      </footer>
+    </div>
+    <script src="detay.js"></script>
+  </body>
+</html>

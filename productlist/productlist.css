@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: 10vh;
+  background: url(images/background.jpg);
+}
+
+.banner nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 600;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 30px;
+}
+
+nav ul li {
+  display: block;
+  padding: 15px 0;
+}
+
+nav ul li.menu-li {
+  margin: 0 15px;
+  text-align: center;
+  order: 1;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  transition: .3s;
+}
+
+nav ul li a:hover {
+  color: rgb(194, 193, 193);
+}
+
+nav ul li.hamburger-btn {
+  display: none;
+}
+
+nav ul li i {
+  font-size: 25px;
+  color: #fff;
+}
+
+nav .banner-icons {
+  margin-left: 50px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 24px;
+  transition: .5s;
+  overflow: hidden;
+}
+
+.search.active {
+  width: 160px;
+}
+
+.search .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.search .icon::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border: 3px solid #287dfc;
+  border-radius: 50%;
+  transform: translate(-2px, -2px);
+}
+
+.search .icon::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 10px;
+  background-color: #287dfc;
+  border-radius: 50%;
+  transform: translate(4px, 4px) rotate(315deg);
+}
+
+.search .input {
+  position: relative;
+  width: 60px;
+  height: 24px;
+  left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search .input input {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.clear {
+  position: absolute;
+  top: 20%;
+  transform: translate(-50%);
+  width: 15px;
+  height: 15px;
+  right: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clear::before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 15px;
+  background-color: #999;
+  transform: rotate(45deg);
+}
+
+.clear::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 15px;
+  background-color: #999;
+  transform: rotate(315deg);
+}
+
+.like_btn,
+.shopping-cart {
+  margin-left: 10px;
+}
+
+.banner-icons .like_btn {
+  background-color: transparent;
+  border: none;
+  padding: 10px 5px;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  position: relative;
+}
+
+.banner-icons .like_btn #count {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: 5px;
+  left: 13px;
+  display: block;
+  background-color: rgb(255, 165, 87);
+  font-weight: 900;
+}
+
+.banner-icons .shoping-btn {
+  background-color: transparent;
+  border: none;
+  padding: 10px 5px;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  font-size: 17px;
+  position: relative;
+}
+
+.banner-icons .shopping-cart #count_shp {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: 5px;
+  left: 13px;
+  display: block;
+  background-color: rgb(255, 165, 87);
+  font-weight: 900;
+}
+
+/* banner content */
+.banner .banner-numbers {
+  position: absolute;
+  top: 300px;
+  right: 10px;
+}
+
+.banner .banner-numbers p {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: right;
+}
+
+section.part2 {
+  width: 100%;
+  background: url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.part2 .part2-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.select-tools {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.styles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.styles p {
+  color: #fff;
+  font-size: 1.3rem;
+  border-bottom: 3px solid #287dfc;
+}
+
+.styles a {
+  color: #fff;
+  font-size: .7rem;
+  text-decoration: none;
+  border: 1px solid #999;
+  padding: 7px 20px;
+  display: block;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.styles a:hover {
+  color: #287dfc;
+}
+
+.show-tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-tools button {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border: none;
+  padding-top: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.show-tools button:hover {
+  border: 1px solid #999;
+}
+
+.show-tools button img {
+  width: 60%;
+}
+
+.show-tools p {
+  color: #fff;
+  font-size: .8rem;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .boxes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .box {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 0px 0px 18px 0 #0000002c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 20px;
+}
+
+.box .product-info {
+  text-align: center;
+}
+
+.box .heart-click2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid black;
+  align-self: flex-end;
+  margin: -20px 15px 0 0;
+}
+
+.like_btn2 {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #000;
+  font-size: 14px;
+  position: relative;
+  display: block;
+}
+
+.box .product-info h2 {
+  color: rgb(68, 66, 66);
+  font-size: .9rem;
+  margin-top: 10px;
+}
+
+section.brands {
+  width: 100%;
+  background: rgba(0, 0, 0, .9) url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+  padding: 40px 0;
+}
+
+.brands-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.brands-container .brands-service {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.brand-images {
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 30px 50px;
+}
+
+.brand-images img {
+  width: 120px;
+}
+
+.brand-images h2 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+section.about {
+  width: 100%;
+  background: rgba(0, 0, 0, .9) url(images/background.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 30px 30px 0 30px;
+  box-sizing: border-box;
+  background-blend-mode: darken;
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.about .about-us {
+  max-width: 800px;
+  text-align: left;
+}
+
+.about .about-us h4 {
+  font-size: .8rem;
+  color: rgb(118, 157, 187);
+}
+
+.about .about-us h2 {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.about .about-us p {
+  font-size: .8rem;
+  color: rgb(195, 196, 202);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+section.contact-logo {
+  width: 100%;
+  /* background: url(images/contact-bg.webp);
+  background-position: center center;
+  background-size: cover; */
+  padding: 30px 30px 0 30px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.contact-logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-logo-container .logos {
+  max-width: 800px;
+}
+
+.contact-logo-container .logos img {
+  width: 100%;
+}
+
+.contact-logo-container .location {
+  max-width: 800px;
+}
+
+.contact-logo-container .location img {
+  width: 100%;
+}
+
+section.contact-about {
+  width: 100%;
+}
+
+.contact-about-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer-menu {
+  width: 300px;
+  margin: 20px;
+}
+
+.footer-menu h2 {
+  color: #fff;
+  font-size: 1.2rem;
+  border-bottom: 4px solid rgb(118, 157, 187);
+  width: 100px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-menu ul {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.footer-menu ul li {
+  display: block;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.footer-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 5px;
+  transition: .3s;
+}
+
+.footer-menu ul li a:hover {
+  color: #287dfc;
+}
+
+.footer-menu ul li.woch {
+  color: rgb(118, 157, 187);
+}
+
+.footer-menu a i {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 7px;
+}
+
+.footer-menu a:hover i {
+  color: #287dfc;
+}
+
+.all-bg {
+  width: 100%;
+  background: url(images/contact-bg.webp);
+  background-position: center center;
+  background-size: cover;
+}
+
+footer {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #043c8f;
+}
+
+footer p {
+  color: rgb(90, 106, 184);
+  font-size: .9rem;
+}
+
+footer p span {
+  color: #fff;
+}
+
+/* media */
+@media only screen and (max-width:900px) {
+  nav ul {
+    justify-content: flex-start;
+  }
+
+  nav ul li.menu-li {
+    width: 100%;
+    display: none;
+    text-align: left;
+  }
+
+  nav ul li.hamburger-btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav ul li.active-menu {
+    display: block;
+  }
+
+  .banner nav {
+    justify-content: space-between;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  nav .banner-icons {
+    align-self: flex-start;
+    margin-top: 10px;
+  }
+
+  .banner .banner-content {
+    left: 30px;
+  }
+
+  .brands-container .brands-service {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .select-tools {
+    flex-direction: column;
+  }
+
+  .styles {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .styles a {
+    margin: 10px 0;
+    width: 100%
+  }
+
+  .contact-about-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
